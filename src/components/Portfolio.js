@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Github, Mail, Moon, Sun, Code, Brain, Terminal, Globe, ExternalLink } from 'lucide-react';
+import { Github, Mail, Moon, Sun, Code, Brain, Terminal, Globe, ExternalLink, FileDown } from 'lucide-react';
 import SkillCard from './SkillCard';
 
 const Portfolio = () => {
@@ -81,6 +81,16 @@ const Portfolio = () => {
             <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-300 mb-8">
               Crafting innovative solutions at the intersection of web development and artificial intelligence
             </p>
+            <div className="flex justify-center gap-4">
+              <a
+                href="/path-to-your-cv.pdf"
+                download
+                className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-medium rounded-lg hover:opacity-90 transition-all duration-300 hover:-translate-y-1 shadow-lg hover:shadow-xl"
+              >
+                <FileDown className="w-5 h-5" />
+                Download CV
+              </a>
+            </div>
           </div>
         </div>
       </section>
